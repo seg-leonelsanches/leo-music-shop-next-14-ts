@@ -2,7 +2,23 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+Before you start, you need to install the dependencies:
+
+```bash
+yarn
+```
+
+We prefer to use Yarn, but you can use NPM or PNPM if you prefer.
+
+Also make sure you have the following environment variables set:
+
+```bash
+NEXT_PUBLIC_SEGMENT_WRITE_KEY='your-write-key-here'
+```
+
+The write key is used to send events to Segment. You can create a new source to get a write key. A very easy way to get this is renaming `.env.example` to `.env.local` and setting the value there.
+
+After this, run the development server:
 
 ```bash
 npm run dev
